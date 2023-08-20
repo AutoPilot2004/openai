@@ -17,5 +17,4 @@ namespace OpenAI
 	private:
 		std::string m_message;
 	};
-
 }
