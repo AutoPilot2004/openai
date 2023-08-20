@@ -5,7 +5,12 @@
 
 int main()
 {
-	OpenAI::GPT gpt("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");
+	std::string key;
+
+	printf("OpenAI API Key: ");
+	std::cin >> key;
+
+	OpenAI::GPT gpt(key);
 
 	try {
 		while (true) {
