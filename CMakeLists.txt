@@ -2,7 +2,12 @@
 # and include sub-projects here.
 #
 cmake_minimum_required (VERSION 3.8)
-set(CMAKE_TOOLCHAIN_FILE "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake")
+
+if (WIN32)
+	set(CMAKE_TOOLCHAIN_FILE "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake")
+elseif (LINUX)
+	set(CMAKE_TOOLCHAIN_FILE "/src/vcpkg/scripts/buildsystems/vcpkg.cmake")
+endif()
 set(ROOT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 
 # Enable Hot Reload for MSVC compilers if supported.
