@@ -2,10 +2,6 @@
 #include <string>
 #include <vector>
 
-#include <nlohmann/json.hpp>
-
-using json = nlohmann::json;
-
 namespace OpenAI
 {
 	struct GPTResponse

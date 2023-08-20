@@ -43,7 +43,7 @@ namespace OpenAI
 		GPTResponse fullResponse;
 
 		if (parsedResponse.contains("error")) {
-			throw GPTException(static_cast<std::string>(parsedResponse["error"]["message"]).c_str());
+			throw GPTException(static_cast<std::string>(parsedResponse["error"]["message"]));
 		}
 		else {
 			convertJsonToGPTR(parsedResponse, fullResponse);

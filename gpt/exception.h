@@ -7,7 +7,7 @@ namespace OpenAI
 	class GPTException : public std::exception
 	{
 	public:
-		GPTException(const char* msg) noexcept : m_message(msg) {}
+		GPTException(const std::string& msg) noexcept : m_message(msg) {}
 
 		const char* what() const noexcept override
 		{
