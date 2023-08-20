@@ -5,7 +5,7 @@
 
 int main()
 {
-	OpenAI::GPT gpt("1k-uMkg3nQndBtv63ginTEaT3BlbkFJGaFZrLe71sDZRw9pQzk8");
+	OpenAI::GPT gpt("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");
 
 	try {
 		while (true) {
