@@ -8,7 +8,7 @@ int main()
 	std::string key;
 
 	printf("OpenAI API Key: ");
-	std::cin >> key;
+	std::getline(std::cin, key);
 
 	OpenAI::GPT gpt(key);
 
